@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @phone.title %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @phone.image %>
+</p>
+
+<p>
+  <strong>Pros:</strong>
+  <%= @phone.pros %>
+</p>
+
+<p>
+  <strong>Cons:</strong>
+  <%= @phone.cons %>
+</p>
+
+<%= link_to 'Edit', edit_phone_path(@phone) %> |
+<%= link_to 'Back', phones_path %>

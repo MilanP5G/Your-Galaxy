@@ -30,11 +30,17 @@ const PhoneForm = props => {
     })
   }
 
+  const handleImageChange = (event) => {
+    if (event.target.files[0])
+      setState({
+        ...state, image: event.target.files[0]
+      });
+  };
+
   const value = state.value
 
     return (
       <div>
-      <div className='yourGalaxy'>Your Galaxy</div>
       <div className="form-section">
        <form onSubmit={handleSubmit}>
         <p>Device Name:</p>
@@ -51,8 +57,9 @@ const PhoneForm = props => {
         <input
           type='file'
           name='image'
-          placeholder='Your device'
-          onChange={handleChange}
+          accept="image/*"
+          multiple={false}
+          onChange={handleImageChange}
           value={value}
         />
         <br></br>
@@ -62,8 +69,8 @@ const PhoneForm = props => {
           type='text'
           name='pros'
           id='phoneForm-pros'
-          cols='40'
-          rows='5'
+          cols='52'
+          rows='3'
           placeholder='What do you like about this Galaxy?'
           onChange={handleChange}
           value={value}
@@ -73,8 +80,8 @@ const PhoneForm = props => {
           type='text'
           name='cons'
           id='phoneForm-cons'
-          cols='40'
-          rows='5'
+          cols='52'
+          rows='3'
           placeholder='What can we improve on your Galaxy?'
           onChange={handleChange}
           value={value}

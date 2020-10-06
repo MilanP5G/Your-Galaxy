@@ -26,3 +26,12 @@ export const fetchPosts = () => {
         })
     }
 }
+
+export const deletePost = (post) => {
+  return dispatch => {
+    fetch(`http://127.0.0.1:3001/posts/${post.id}`, {
+      method: 'DELETE'
+    })
+    dispatch({ type: 'DELETE_POST', payload: post })
+  }
+}

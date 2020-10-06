@@ -1,15 +1,14 @@
-*
 /*{box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+/* .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-}
+} */
 
 /* Fading animation */
-.fade {
+/* .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -24,7 +23,7 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
+} */
 
 #Z-Fold-2 {
   margin-top: 140px;
@@ -34,13 +33,13 @@
 }
 
 #Note-20 {
-  margin-top: 140px;
+  margin-top: 80px;
   margin-left: 260px;
   width: 1100px;
   height: auto;
 }
 #S20-FE {
-  margin-top: 140px;
+  margin-top: 90px;
   margin-left: 240px;
   width: 1090px;
   height: auto;

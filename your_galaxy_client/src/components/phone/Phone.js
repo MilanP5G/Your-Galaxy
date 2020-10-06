@@ -5,8 +5,6 @@ import '../../styling/Phone.css'
 
 class Phone extends Component {
 
-
-
   render() {
     const { phone } = this.props;
 

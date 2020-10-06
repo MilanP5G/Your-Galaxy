@@ -29,8 +29,10 @@ export const fetchPosts = () => {
 
 export const deletePost = (post) => {
   return dispatch => {
-    fetch(`http://127.0.0.1:3001/posts/${post.id}`, {
-      method: 'DELETE'
+    fetch(`http://localhost:3001/posts/${post.id}`, {
+      method: 'DELETE',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(post)
     })
     dispatch({ type: 'DELETE_POST', payload: post })
   }

@@ -1,13 +1,6 @@
-// import uuid from 'uuid'
-
 export const phoneReducer = (state = {phones: []}, action) => {
     switch (action.type) {
         case 'ADD_PHONE':
-
-        // const phone = {
-        //   id: uuid(),
-        //   payload: action.payload
-        // }
 
           return { ...state, phones: [ ...state.phones, action.payload ]};
 

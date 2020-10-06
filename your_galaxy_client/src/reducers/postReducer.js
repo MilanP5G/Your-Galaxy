@@ -2,11 +2,6 @@ export const postReducer = (state = {posts: []}, action) => {
     switch (action.type) {
         case 'ADD_POST':
 
-        // const phone = {
-        //   id: uuid(),
-        //   payload: action.payload
-        // }
-
           return { ...state, posts: [ ...state.posts, action.payload ]};
 
         case 'FETCH_POSTS':
@@ -15,7 +10,7 @@ export const postReducer = (state = {posts: []}, action) => {
 
         case 'DELETE_POST':
 
-          return { ...state, posts: state.posts.filter(post => post.id !== action.payload)}
+          return { ...state, posts: state.posts.filter(post => post.id !== action.payload.id)}
 
         default:
         return state;

@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
-import '../../../styling/Post.css'
+import { deletePost } from '../../../actions/PostAction'
+import { connect } from 'react-redux'
+
 
 class Post extends Component {
-
-  handleClick = () => {
-    this.props.deletePost(this.props.id)
-  }
-
 
   render() {
     const { post } = this.props;
@@ -17,10 +14,15 @@ class Post extends Component {
           <br></br>
           {post.content}
           <br></br>
-          <button onClick={this.handleClick}> Delete </button>
+          <button onClick={() => this.props.deletePost(post)}> Delete </button>
       </div>
     );
   }
 };
 
-export default Post;
+const mapDispatchToProps = dispatch => {
+  return { deletePost: post => dispatch(deletePost(post))}
+}
+
+
+export default connect(null, mapDispatchToProps)(Post)

@@ -8,6 +8,16 @@ class PostsController < ApplicationController
     render json: @posts
   end
 
+  # POST /posts
+  # POST /posts.json
+  def create
+    @post = Post.new(post_params)
+      if @post.save
+        render json: @post
+
+    end
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show
@@ -20,16 +30,6 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-  end
-
-  # POST /posts
-  # POST /posts.json
-  def create
-    @post = Phone.new(phone_params)
-      if @post.save
-        render json: @post
-
-    end
   end
 
   # PATCH/PUT /posts/1
@@ -50,10 +50,6 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-    respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
-      format.json { head :no_content }
-    end
   end
 
   private

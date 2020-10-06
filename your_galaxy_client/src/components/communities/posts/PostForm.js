@@ -7,7 +7,6 @@ const PostForm = props => {
   const [state, setState] = useState({
     title: '',
     content: ''
-
  })
 
   const handleSubmit = event => {

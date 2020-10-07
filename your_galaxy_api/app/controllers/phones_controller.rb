@@ -14,7 +14,6 @@ class PhonesController < ApplicationController
     @phone = Phone.new(phone_params)
       if @phone.save
         render json: @phone
-
     end
   end
 

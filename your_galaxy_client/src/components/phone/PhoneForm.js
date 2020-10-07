@@ -13,7 +13,7 @@ const PhoneForm = props => {
  })
 
   const handleSubmit = event => {
-    event.preventDefault();
+    event.preventDefault()
     props.addPhone(state)
     setState({
       title: '',
@@ -29,13 +29,7 @@ const PhoneForm = props => {
       ...state, [event.target.name]: event.target.value
     })
   }
-
-  const handleImageChange = (event) => {
-    if (event.target.files[0])
-      setState({
-        ...state, image: event.target.files[0]
-      });
-  };
+  
 
   const value = state.value
 
@@ -57,9 +51,7 @@ const PhoneForm = props => {
         <input
           type='file'
           name='image'
-          accept="image/*"
-          multiple={false}
-          onChange={handleImageChange}
+          onChange={handleChange}
           value={value}
         />
         <br></br>

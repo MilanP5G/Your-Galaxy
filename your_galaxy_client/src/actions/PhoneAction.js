@@ -2,7 +2,7 @@ export const addPhone = phone => {
   return dispatch => {
     return fetch("http://localhost:3001/phones", {
       method: "POST",
-      body: JSON.stringify({ phone: phone }),
+      body: JSON.stringify(phone),
       headers: {
         "Content-Type": "application/json",
       },

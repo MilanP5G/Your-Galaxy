@@ -21,6 +21,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    render json: @post
   end
 
   # GET /posts/new

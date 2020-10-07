@@ -1,18 +1,16 @@
-export const addPhone = phone => {
-  return dispatch => {
-    return fetch("http://localhost:3001/phones", {
-      method: "POST",
-      body: JSON.stringify(phone),
-      headers: {
-        "Content-Type": "application/json",
-      },
+export const addPhone = (data) => {
+  console.log(data);
+  return (dispatch) => {
+    return fetch('http://localhost:3001/phones', {
+      method: 'POST',
+      body: data,
     })
-      .then(resp => resp.json())
-      .then(phone => {
-        dispatch({ type: "ADD_PHONE", payload: phone });
+      .then((resp) => resp.json())
+      .then((phone) => {
+        dispatch({ type: 'ADD_PHONE', payload: phone });
       });
   };
-}
+};
 
 export const fetchPhones = () => {
     return (dispatch) => {

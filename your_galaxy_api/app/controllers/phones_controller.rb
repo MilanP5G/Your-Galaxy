@@ -5,7 +5,7 @@ class PhonesController < ApplicationController
   # GET /phones.json
   def index
     @phones = Phone.all
-    render json: @phones
+    render json: @phones, :methods => :image_url
   end
 
   # POST /phones

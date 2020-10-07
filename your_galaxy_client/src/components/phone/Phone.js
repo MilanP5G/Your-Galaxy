@@ -12,7 +12,7 @@ class Phone extends Component {
         <div className='phoneCard'>
           <h1 className='phoneTitle'>{phone.title}</h1>
           <br></br>
-          {phone.image}
+          <img src={phone.image_url} />
           <br></br>
           {phone.pros}
           <br></br>

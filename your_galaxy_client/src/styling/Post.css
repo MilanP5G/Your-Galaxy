@@ -18,3 +18,7 @@
 .add-post {
   margin-top:700px;
 }
+
+.post-show {
+  display: block;
+}

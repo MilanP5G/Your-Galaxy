@@ -22,9 +22,5 @@ const mapStateToProps = state => ({
   phones: state.phones.phones
 })
 
-// const mapDispatchToProps = dispatch => ({
-//   deletePhone: id => dispatch({ type: 'DELETE_PHONE', id })
-// })
-
 
 export default connect(mapStateToProps, { fetchPhones })(PhonesContainer)

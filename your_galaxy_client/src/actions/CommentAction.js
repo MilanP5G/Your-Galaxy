@@ -8,17 +8,17 @@ export const addComment = ( postId, formData ) => {
       },
     })
       .then(resp => resp.json())
-      .then(phone => {
-        dispatch({ type: "ADD_COMMENT", payload: resp.data });
+      .then(com => {
+        dispatch({ type: "ADD_COMMENT", payload: com.data });
       });
   };
 }
 
-export const deleteComment = ( postId, commentId ) => {
+export const deleteComment = ( id ) => {
   return dispatch => {
-    fetch(`http://localhost:3001/posts/comment/${postId}/${commentId}`, {
+    fetch(`http://localhost:3001/comments/${id}`, {
       method: 'DELETE'
     })
-    dispatch({ type: 'DELETE_PHONE', payload: commentId })
+    dispatch({ type: 'DELETE_PHONE', payload: id })
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { addPost } from '../../../actions/PostAction'
+import { addComment } from '../../../actions/CommentAction'
 import { connect } from 'react-redux'
 
 

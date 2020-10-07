@@ -6,7 +6,6 @@ import '../../../styling/Post.css'
 class Posts extends Component {
 
   render() {
-    debugger 
     return (
       <div>
       {this.props.posts.map(post => (

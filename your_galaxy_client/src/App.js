@@ -10,6 +10,7 @@ import PostsContainer from './containers/PostContainer'
 import PostForm from './components/communities/posts/PostForm'
 import NavBar from './components/navbar/NavBar'
 import Home from './components/Home'
+import PostShow from './components/communities/comments/PostShow'
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
          <Route exact path='/phones' component={PhonesContainer} />
          <Route exact path='/posts/add' component={PostForm} />
          <Route exact path='/community' component={PostsContainer} />
+         <Route exact path='/posts/postId' render={(props) => <PostShow {...props} posts={this.state.posts}/>} />
         </div>
       </Router>
     )}

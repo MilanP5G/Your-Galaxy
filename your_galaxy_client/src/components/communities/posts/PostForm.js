@@ -29,7 +29,6 @@ const PostForm = props => {
 
     return (
       <div>
-      <label>Galaxy Community</label>
        <form onSubmit={handleSubmit}>
         <p>Post Title:</p>
         <input

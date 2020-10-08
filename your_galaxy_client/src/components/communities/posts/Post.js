@@ -11,13 +11,12 @@ class Post extends Component {
 
     return (
       <div className='postCard'>
+        <Link key={post.id} to={`/posts/${post.id}`} className='comment-on-post'>
           <h1>{post.title}</h1>
+        </Link>
           <br></br>
           {post.content}
           <br></br>
-          <Link to={`/posts/${post.id}`} className='comment-on-post'>
-            <button>Comment</button>
-          </Link>
           <button onClick={() => this.props.deletePost(post)}> Delete </button>
       </div>
     );

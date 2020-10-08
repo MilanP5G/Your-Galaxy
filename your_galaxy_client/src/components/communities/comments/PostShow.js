@@ -2,8 +2,7 @@ import React from 'react'
 
 const PostShow = ({ match, posts }) => {
 
-  const post = posts.posts.find( pst => pst.id === parseInt(match.params.id))
-  if (posts.posts.length === 0) return null
+  const post = posts.posts.find( post => post.id === parseInt(match.params.id))
 
   return (
     <div className='post-show'>

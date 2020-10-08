@@ -26,11 +26,9 @@ class Phone extends Component {
           <br></br>
           {phone.cons}
           <br></br>
-          {
           <div className="dlte-phone-button">
             <button className="delete-phone" onClick={() => this.props.deletePhone(phone)}> Delete </button>
           </div>
-        }
         </div>
     );
   }

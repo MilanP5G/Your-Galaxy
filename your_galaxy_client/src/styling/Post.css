@@ -2,7 +2,6 @@
   background: white;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  cursor: pointer;
   top: 300px;
   height: 300px;
   margin: 20px;
@@ -12,7 +11,7 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0.025);
   text-align: center;
   transition: height 1000ms;
-  width: 260px;
+  width: 500px;
 }
 .add-post {
   margin-top:700px;

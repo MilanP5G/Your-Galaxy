@@ -1,21 +1,22 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
+// import Phones from './Phones'
 
 
-const PhoneShow = ({ phone }) => {
-  const { phoneId } = useParams()
+const PhoneShow = ({ match, phones }) => {
+  // const { phoneId } = useParams()
 
-  console.log(phoneId)
+  // if(phones.phones.length === 0) return null
+  // const phone = phones.phones.find((phone) => phone.id === parseInt(phoneId))
 
-  if(phone.length === 0) return null
-  const phones = phone.find((phone) => phone.phone_id === parseInt(phoneId))
+  const phone = phones.phones.find( p => p.id === parseInt(match.params.id))
+  if (phones.phones.length === 0) return null
+
+
 
   return (
     <div>
       {phone.title}
-      {phone.image}
-      {phone.pros}
-      {phone.cons}
     </div>
   )
 

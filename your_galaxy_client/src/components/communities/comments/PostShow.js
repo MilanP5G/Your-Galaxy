@@ -1,15 +1,13 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
+// import { fetchPosts } from '../../../actions/PostAction'
+// import { connect } from 'react-redux'
 import '../../../styling/Post.css'
 
-const PostShow = ({ posts }) => {
-  const { postId } = useParams();
-
-  console.log(postId)
-
-
-  if (posts.length === 0) return null;
-  const post = posts.find((posts) => posts.post_id === parseInt(postId))
+const PostShow = ({ match, posts }) => {
+  
+  const post = posts.posts.find( p => p.id === parseInt(match.params.id))
+  if (posts.posts.length === 0) return null
 
   return (
     <div className='post-show'>
@@ -19,6 +17,5 @@ const PostShow = ({ posts }) => {
   )
 
 }
-
 
 export default PostShow

@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Phone from './Phone'
 import { Link } from 'react-router-dom'
 import '../../styling/Phones.css'
 
-class Phones extends Component {
+const Phones = props => {
 
-  render() {
     return(
       <div>
-        {this.props.phones.map(phone => (
+        {props.phones.phones.map(phone => (
           <Phone phone={phone} key={phone.id} />
         ))}
         <Link to='/phones/add' >
@@ -16,7 +15,6 @@ class Phones extends Component {
         </Link>
       </div>
     );
-  }
 };
 
 export default Phones

@@ -19,12 +19,13 @@ class App extends Component {
       <Router>
         <div>
          <NavBar />
+         <PostsContainer />
          <Switch>
            <Route exact path='/' component={Home} />
            <Route exact path='/phones/add' component={PhoneForm} />
            <Route exact path='/phones' component={PhonesContainer} />
            <Route exact path='/posts/add' component={PostForm} />
-           <Route exact path='/community' component={PostsContainer} />
+           // <Route exact path='/community' component={PostsContainer} />
          </Switch>
         </div>
       </Router>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 const PhoneShow = ({ match, phones }) => {
+  debugger
 
     const phone = phones.phones.filter( phne => phne.id === parseInt(match.params.id))
 

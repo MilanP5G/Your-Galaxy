@@ -11,7 +11,7 @@ class Post extends Component {
 
     return (
       <div className='postCard'>
-        <Link key={post.id} to={`/posts/${post.id}`} className='comment-on-post'>
+        <Link to={`/posts/${post.id}`} className='comment-on-post'>
           <h1>{post.title}</h1>
         </Link>
           <br></br>
@@ -29,7 +29,3 @@ const mapDispatchToProps = dispatch => {
 
 
 export default connect(null, mapDispatchToProps)(Post)
-
-// {comments.length > 0 && (
-  // <span className='comment-count'>{comments.length}</span>
-// )}

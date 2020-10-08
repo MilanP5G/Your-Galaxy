@@ -20,7 +20,7 @@ body {
   margin: 30px;
   height: auto;
   float: left;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   position: relative;
   -webkit-tap-highlight-color: rgba(0,0,0,0.025);
   text-align: center;
@@ -34,4 +34,14 @@ body {
 }
 .add-phone {
   margin-top:700px;
+}
+.delete-phone {
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #b30000;
+  color: white;
+}
+.dlte-phone-button {
+  display: grid;
 }

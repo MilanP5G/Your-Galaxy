@@ -11,7 +11,7 @@ const Phones = props => {
           <Phone phone={phone} key={phone.id} />
         ))}
         <Link to='/phones/add' >
-            <button className='add-phone'>Add Device</button>
+            <button className='add-phone'>+</button>
         </Link>
       </div>
     );

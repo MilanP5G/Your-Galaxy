@@ -11,7 +11,7 @@ class Phone extends Component {
 
     return (
         <div className='phoneCard'>
-        <Link to={`/phones/${phone.id}`} >
+        <Link key={phone.id} to={`/phones/${phone.id}`} >
           <h1 className='phoneTitle'>{phone.title}</h1>
         </Link>
           <br></br>
@@ -27,7 +27,9 @@ class Phone extends Component {
           {phone.cons}
           <br></br>
           {
-          <button onClick={() => this.props.deletePhone(phone)}> Delete </button>
+          <div className="dlte-phone-button">
+            <button className="delete-phone" onClick={() => this.props.deletePhone(phone)}> Delete </button>
+          </div>
         }
         </div>
     );

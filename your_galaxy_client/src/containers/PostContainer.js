@@ -24,12 +24,5 @@ class PostsContainer extends Component {
 }
 
 const mapStateToProps = ({ posts }) => ({ posts })
-//
-// const mapDispatchToProps = dispatch => ({
-//   addPhone: payload => dispatch({ type: 'ADD_PHONE', payload }),
-//   deletePhone: id => dispatch({ type: 'DELETE_PHONE', id }),
-//   fetchPhones
-// })
-
 
 export default connect(mapStateToProps, { fetchPosts })(PostsContainer)

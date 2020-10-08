@@ -1,4 +1,14 @@
 .add-phone {
   position: fixed;
-  margin-top: 500px;
+  background: white;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  height: 400px;
+  width: 200px;
+  margin: 250px 30px;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 50%;
 }

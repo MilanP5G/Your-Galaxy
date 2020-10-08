@@ -15,8 +15,8 @@ class PhonesContainer extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path='/phones' render={(props) => <Phones {...props} phones={this.props.phones} />} />
-          <Route exact path='/phones/:id' render={(props) => <PhoneShow {...props} phones={this.props.phones}/>} />
+          <Route exact path='/phones' render={(props) => <Phones {...this.state} phones={this.props.phones} />} />
+          <Route exact path='/phones/:id' render={(props) => <PhoneShow {...this.state} phones={this.props.phones}/>} />
         </Switch>
       </div>
     )

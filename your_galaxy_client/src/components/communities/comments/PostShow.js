@@ -3,7 +3,7 @@ import CommentForm from './CommentForm'
 import '../../../styling/PostShow.css'
 
 
-const PostShow = ({ match, posts }) => {
+const PostShow = ({ comment, match, posts }) => {
 
   if (posts.posts.length === 0) return null;
   const post = posts.posts.find( post => post.id === parseInt(match.params.id))

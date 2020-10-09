@@ -27,11 +27,11 @@ export const fetchComments = () => {
     }
 }
 
-export const deleteComment = ( id ) => {
+export const deleteComment = ( comment ) => {
   return dispatch => {
-    fetch(`http://localhost:3001/comments/${id}`, {
+    fetch(`http://localhost:3001/comments/${comment.id}`, {
       method: 'DELETE'
     })
-    dispatch({ type: 'DELETE_PHONE', payload: id })
+    dispatch({ type: 'DELETE_COMMENT', payload: comment })
   }
 }

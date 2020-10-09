@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { deleteComment } from '../../../actions/CommentAction'
 import { connect } from 'react-redux'
-import { fetchComments } from '../../../actions/CommentAction'
-import { connect } from 'react-router-dom'
 
 
 class Comment extends Component {
@@ -11,18 +9,18 @@ class Comment extends Component {
     const { comment } = this.props;
 
     return (
-      <div className='postCard'>
+      <div className='commentCard'>
           <p>{comment.content}</p>
           <br></br>
-          <button onClick={() => this.props.deleteComment(post)}> Delete </button>
+          <button onClick={() => this.props.deleteComment(comment)}> Delete </button>
       </div>
     );
   }
 };
 
 const mapDispatchToProps = dispatch => {
-  return { deletePost: post => dispatch(deletePost(post))}
+  return { deleteComment: comment => dispatch(deleteComment(comment))}
 }
 
 
-export default connect(null, mapDispatchToProps, { fetchComments })(Post)
+export default connect(null, mapDispatchToProps)(Comment)

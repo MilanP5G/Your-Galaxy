@@ -5,16 +5,15 @@ class CommentsController < ApplicationController
   # GET /comments.json
   def index
     @comments = Comment.all
-    render json: @comments
+    render json: @comments, include: [:post]
   end
 
   # POST /comments
   # POST /comments.json
   def create
-    @post = Post.find(params[:post_id])
-    @comment = @post.comments.build
-    if @comment.save
-      render json: @comment
+    @comment = Comment.new(comment_params)
+      if @comment.save
+        render json: @comment
     end
   end
 

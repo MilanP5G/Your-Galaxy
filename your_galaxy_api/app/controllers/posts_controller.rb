@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    render json: @posts
+    render json: @posts, include: [:comments]
   end
 
   # POST /posts

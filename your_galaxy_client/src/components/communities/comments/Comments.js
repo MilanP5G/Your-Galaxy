@@ -5,9 +5,11 @@ import '../../../styling/Post.css'
 
 const Comments = props => {
 
+  const comments = props.comments.comments.filter(comment => comment.post_id === props.postId)
+
     return (
       <div>
-      {props.comments.comments.map(comment => (
+      {comments.map(comment => (
         <Comment comment={comment} key={comment.id} />
       ))}
       </div>

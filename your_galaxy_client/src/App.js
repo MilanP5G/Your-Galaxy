@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   BrowserRouter as Router,
   Route, Switch
@@ -9,9 +9,8 @@ import PostsContainer from './containers/PostContainer'
 import NavBar from './components/navbar/NavBar'
 import Home from './components/Home'
 
-class App extends Component {
+const App = () => {
 
-  render() {
     return (
       <Router>
         <div>
@@ -24,6 +23,5 @@ class App extends Component {
         </div>
       </Router>
     )}
-  }
 
 export default App;

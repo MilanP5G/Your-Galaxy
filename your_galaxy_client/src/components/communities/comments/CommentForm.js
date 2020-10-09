@@ -4,17 +4,20 @@ import { connect } from 'react-redux'
 
 
 const CommentForm = ({ postId, addComment }) => {
-  const [content, setState] = useState({ content: '' })
+  const [content, setContent] = useState('')
 
-  console.log(content)
 
   const handleSubmit = event => {
     event.preventDefault();
     addComment({ post_id: postId, content: content })
-    setState({
-      content: ''
-    })
+    resetForm()
   }
+
+  const resetForm = () => {
+    setContent('')
+  }
+
+  console.log(content)
 
     return (
       <div>
@@ -22,8 +25,9 @@ const CommentForm = ({ postId, addComment }) => {
         <input
           type='text'
           name='content'
+          value={content}
           placeholder='Leave a comment here...'
-          onChange={(event) => setState(event.target.value)}
+          onChange={(event) => setContent(event.target.value)}
           required
         />
         <button type='submit'>Submit</button>

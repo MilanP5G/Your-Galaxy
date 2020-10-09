@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
 import CommentForm from './CommentForm'
-import Comment from './Comment'
+import Comments from './Comments'
 import '../../../styling/PostShow.css'
 
 
-const PostShow = ({ match, posts }) => {
+const PostShow = ({ match, posts, comments }) => {
 
   if (posts.posts.length === 0) return null;
   const post = posts.posts.find( post => post.id === parseInt(match.params.id))
@@ -16,9 +16,7 @@ const PostShow = ({ match, posts }) => {
        <p>{post.content}</p>
        Comments
        <div className='comments'>
-         {post.comments.map((comment) => (
-           <Comment key={comment.id} comment={comment} postId={post.id} />
-         ))}
+        <Comments postId={post.id} comments={comments} />
        </div>
       </div>
       <div className='show-comment-form' >

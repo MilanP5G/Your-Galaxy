@@ -12,6 +12,7 @@ export const postReducer = (state = {posts: []}, action) => {
 
           return { ...state, posts: state.posts.filter(post => post.id !== action.payload.id)}
 
+
         default:
         return state;
     }

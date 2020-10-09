@@ -1,5 +1,7 @@
-import React from 'react'
-import '../../../styling/Post.css'
+import React, { Fragment } from 'react'
+import CommentForm from './CommentForm'
+import '../../../styling/PostShow.css'
+
 
 const PostShow = ({ match, posts }) => {
 
@@ -7,10 +9,15 @@ const PostShow = ({ match, posts }) => {
   const post = posts.posts.find( post => post.id === parseInt(match.params.id))
 
   return (
-    <div className='post-show'>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
-    </div>
+    <Fragment>
+      <div className='post-show' >
+       <h1>{post.title}</h1>
+       <p>{post.content}</p>
+      </div>
+      <div className='show-comment-form' >
+       <CommentForm postId={post.id} />
+      </div>
+    </Fragment>
   )
 
 }

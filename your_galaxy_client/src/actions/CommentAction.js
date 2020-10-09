@@ -1,17 +1,30 @@
-export const addComment = ( postId, formData ) => {
+export const addComment = ( comment ) => {
   return dispatch => {
-    return fetch(`http://localhost:3001/posts/comment/${postId}`, {
+    return fetch(`http://localhost:3001/posts/${comment.post_id}/comments`, {
       method: "POST",
-      body: JSON.stringify(postId, formData),
+      body: JSON.stringify(comment),
       headers: {
         "Content-Type": "application/json",
       },
     })
       .then(resp => resp.json())
-      .then(com => {
-        dispatch({ type: "ADD_COMMENT", payload: com.data });
+      .then(comment => {
+        dispatch({ type: "ADD_COMMENT", payload: comment });
       });
   };
+}
+
+export const fetchComments = () => {
+    return (dispatch) => {
+        fetch('http://localhost:3001/comments')
+        .then(resp => {
+            return resp.json()
+        })
+        .then(comments => {
+          console.log(comments)
+            dispatch({ type: 'FETCH_COMMENT', payload: comments })
+        })
+    }
 }
 
 export const deleteComment = ( id ) => {

@@ -4,24 +4,31 @@ import { connect } from 'react-redux'
 
 
 const CommentForm = ({ postId, addComment }) => {
-  const [content, setState] = useState('')
+  const [content, setState] = useState({ content: '' })
+
 
   const handleSubmit = event => {
     event.preventDefault();
-    addComment(postId, { content })
-    setState('')
+    addComment({ post_id: postId, content: content })
+    setState({
+      content: ''
+    })
+  }
+
+  const handleChange = (event) => {
+    setState({
+      content: event.target.value
+    })
   }
 
     return (
       <div>
        <form onSubmit={handleSubmit}>
-        <textarea
+        <input
           type='text'
           name='content'
-          cols='30'
-          rows='5'
           placeholder='Leave a comment here...'
-          onChange={(event) => setState(event.target.value)}
+          onChange={handleChange}
           required
         />
         <button type='submit'>Submit</button>

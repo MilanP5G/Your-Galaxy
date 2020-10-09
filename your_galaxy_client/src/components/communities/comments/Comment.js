@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { deleteComment } from '../../../actions/CommentAction'
 import { connect } from 'react-redux'
+import { fetchComments } from '../../../actions/CommentAction'
+import { connect } from 'react-router-dom'
 
 
-class Post extends Component {
+class Comment extends Component {
 
   render() {
     const { comment } = this.props;
@@ -23,4 +25,4 @@ const mapDispatchToProps = dispatch => {
 }
 
 
-export default connect(null, mapDispatchToProps)(Post)
+export default connect(null, mapDispatchToProps, { fetchComments })(Post)

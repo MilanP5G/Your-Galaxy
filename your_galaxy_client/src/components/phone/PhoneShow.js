@@ -1,9 +1,9 @@
 import React from 'react'
 
 const PhoneShow = ({ match, phones }) => {
-  debugger
 
-    const phone = phones.phones.filter( phne => phne.id === parseInt(match.params.id))
+    if (phones.phones.length === 0) return null
+    const phone = phones.phones.find( phone => phone.id === parseInt(match.params.id))
 
     return (
       <div>

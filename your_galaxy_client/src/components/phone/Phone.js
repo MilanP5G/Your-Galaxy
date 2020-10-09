@@ -11,7 +11,7 @@ class Phone extends Component {
 
     return (
         <div className='phoneCard'>
-        <Link key={phone.id} to={`/phones/${phone.id}`} >
+        <Link to={`/phones/${phone.id}`} >
           <h1 className='phoneTitle'>{phone.title}</h1>
         </Link>
           <br></br>

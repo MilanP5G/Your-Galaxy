@@ -11,7 +11,7 @@ const Posts = props => {
         <Post post={post} key={post.id} />
       ))}
       <Link to='/posts/add' >
-        <button className='add-post'>New Post</button>
+        <button className='add-post'> + </button>
       </Link>
       </div>
     )

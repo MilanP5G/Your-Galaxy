@@ -7,7 +7,6 @@
   height: 300px;
   margin: 20px;
   float: left;
-  padding: 0 20px;
   position: relative;
   -webkit-tap-highlight-color: rgba(0,0,0,0.025);
   text-align: center;
@@ -15,7 +14,18 @@
   width: 500px;
 }
 .add-post {
-  margin-top:700px;
+    position: fixed;
+    background: white;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    height: 400px;
+    width: 200px;
+    margin: 250px 30px;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 50%;
 }
 
 .deletePost {
@@ -24,10 +34,11 @@
   border-bottom-right-radius: 20px;
   color: white;
   background-color: #b30000;
+  margin-top: 100px;
+  height: auto;
   width:auto;
 }
 
 .dlte-post-button {
   display: grid;
-  height: 30px;
 }

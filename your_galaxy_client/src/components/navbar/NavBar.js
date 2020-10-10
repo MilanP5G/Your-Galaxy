@@ -3,10 +3,12 @@ import { NavLink } from "react-router-dom";
 import '../../styling/NavBar.css'
 import logo from '../../assets/Samsung_Logo.png'
 import devices from '../../assets/Your_Devices.png'
-import community from '../../assets/Community.png'
+import report from '../../assets/Report.png'
+
 
 const NavBar = () => {
-  return (
+
+    return (
     <div className="nav-bar">
       <div className='nav-logo'>
         <NavLink className="nav-link-logo" to="/">
@@ -17,12 +19,12 @@ const NavBar = () => {
         <NavLink className="nav-link-phones" to="/phones">
           <img id="your-devices-link" alt='Your Devices' src={devices} />
         </NavLink>
-        <NavLink className="nav-link-community" to="/community">
-          <img id="community-link" alt='Your Devices' src={community} />
+        <NavLink className="nav-link-community" to="/report">
+          <img id="community-link" alt='Your Devices' src={report} />
         </NavLink>
       </div>
     </div>
   );
-};
+}
 
-export default NavBar;
+export default NavBar

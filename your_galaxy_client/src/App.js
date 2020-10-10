@@ -7,9 +7,7 @@ import './App.css'
 import PhonesContainer from './containers/PhoneContainer'
 import PostsContainer from './containers/PostContainer'
 import NavBar from './components/navbar/NavBar'
-import SignUp from './components/user/SignUp';
-import Login from './components/user/Login';
-import Welcome from './components/Welcome'
+import Home from './components/Home'
 
 const App = () => {
 
@@ -20,7 +18,7 @@ const App = () => {
          <PhonesContainer />
          <PostsContainer />
          <Switch>
-           <Route exact path='/welcome' component={Welcome} />
+           <Route exact path='/' component={Home} />
          </Switch>
         </div>
       </Router>

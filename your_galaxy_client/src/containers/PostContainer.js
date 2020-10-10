@@ -20,7 +20,7 @@ class PostsContainer extends Component {
        <Switch>
         <Route exact path='/posts/add' component={PostForm} />
         <Route exact path='/posts/:id' render={(props) => <PostShow {...props} posts={this.props.posts} comments={this.props.comments}/>} />
-        <Route exact path='/community' render={(props) => <Posts {...props} posts={this.props.posts} />} />
+        <Route exact path='/report' render={(props) => <Posts {...props} posts={this.props.posts} />} />
       </Switch>
       </div>
     )

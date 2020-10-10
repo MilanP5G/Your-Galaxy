@@ -15,8 +15,10 @@ const PhoneShow = ({ match, phones }) => {
             alt=' '
           />
         </div>
-        <div className='' >
+        <div className='phone-pros-cons' >
+          <h2>Pros:</h2>
           <p>{phone.pros}</p>
+          <h2>Cons:</h2>
           <p>{phone.cons}</p>
         </div>
       </div>

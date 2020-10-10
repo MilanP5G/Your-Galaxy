@@ -1,22 +1,32 @@
 .phone-show-card {
+  display: block;
+  justify-content: center;
   background: white;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  cursor: pointer;
-  top: 150px;
-  margin: 30px;
+  top: 250px;
+  width: auto;
   height: auto;
   float: left;
+  margin-left: 50px;
   position: relative;
   -webkit-tap-highlight-color: rgba(0,0,0,0.025);
   text-align: center;
-  transition: height 1000ms;
-  width: 600px;
 }
+
+
 .phone-show-image img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 300px;
   max-height: auto;
+  padding: 10px;
 }
-.pros-cons {
+
+.phone-show-image {
+  float: left;
+}
+
+.phone-pros-cons {
+  float: right;
+  padding: 30px;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { addComment } from '../../../actions/CommentAction'
 import { connect } from 'react-redux'
+import '../../../styling/CommentForm.css'
 
 
 const CommentForm = ({ postId, addComment }) => {
@@ -21,10 +22,12 @@ const CommentForm = ({ postId, addComment }) => {
 
     return (
       <div>
+      <div className="comment-form">
        <form onSubmit={handleSubmit}>
         <input
           type='text'
           name='content'
+          id="commentForm-content"
           value={content}
           placeholder='Leave a comment here...'
           onChange={(event) => setContent(event.target.value)}
@@ -33,6 +36,7 @@ const CommentForm = ({ postId, addComment }) => {
         <button type='submit'>Submit</button>
        </form>
       </div>
+     </div>
     );
 }
 

@@ -18,13 +18,10 @@ class Phone extends Component {
           <div className='phone-image' >
             <img
               src={phone.image_url}
+              onLoad={phone}
               alt=" "
             />
           </div>
-          <br></br>
-          {phone.pros}
-          <br></br>
-          {phone.cons}
           <br></br>
           <div className="dlte-phone-button">
             <button className="delete-phone" onClick={() => this.props.deletePhone(phone)}> Delete </button>

@@ -4,36 +4,40 @@ body {
   height: 100vh;
   font-family: sans-serif;
   margin: 0;
+}
 
-}
-@media (max-width: 767px) {
-  body {
-    display: block;
-  }
-}
 .phoneCard {
+  display: grid;
   background: white;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  cursor: pointer;
   top: 200px;
   margin: 30px;
-  height: auto;
+  height: 440px;
   float: left;
   position: relative;
   -webkit-tap-highlight-color: rgba(0,0,0,0.025);
   text-align: center;
-  transition: height 1000ms;
+  transition: 0.5s ease;
+  cursor: pointer;
   width: 260px;
 }
+
+.phoneCard:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
 .phone-image img {
-  display: inline-block;
+  padding-bottom: 10px;
   max-width: 100%;
   height: auto;
 }
+
 .add-phone {
   margin-top:700px;
 }
+
 .delete-phone {
   border: none;
   border-bottom-left-radius: 8px;
@@ -42,6 +46,8 @@ body {
   color: white;
   font-weight: bold;
 }
+
 .dlte-phone-button {
   display: grid;
+  height: 30px;
 }

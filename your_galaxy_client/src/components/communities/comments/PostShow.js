@@ -19,6 +19,7 @@ const PostShow = ({ match, posts, comments }) => {
         <Comments postId={post.id} comments={comments} />
        </div>
       </div>
+      <br></br>
       <div className='show-comment-form' >
        <CommentForm postId={post.id} />
       </div>

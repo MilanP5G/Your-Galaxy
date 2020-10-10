@@ -7,6 +7,8 @@ import './App.css'
 import PhonesContainer from './containers/PhoneContainer'
 import PostsContainer from './containers/PostContainer'
 import NavBar from './components/navbar/NavBar'
+import SignUp from './components/user/SignUp';
+import Login from './components/user/Login';
 import Welcome from './components/Welcome'
 
 const App = () => {

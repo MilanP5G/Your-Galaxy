@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { signup } from '../../actions/UserAction';
+import { login } from '../../actions/UserAction';
 import { connect } from 'react-redux';
 
-class SignUp extends Component {
+class Login extends Component {
   state = {
-    name: '',
     email: '',
     password: '',
   };
@@ -17,21 +16,13 @@ class SignUp extends Component {
 
   handleOnSubmit = (e) => {
     e.preventDefault();
-    this.props.signup(this.state, this.props.history);
+    this.props.login(this.state, this.props.history);
   };
 
   render() {
     return (
       <div>
         <form onSubmit={this.handleOnSubmit}>
-          <label>Name</label>
-          <input
-            name="name"
-            value={this.state.name}
-            onChange={this.handleOnChange}
-            type="text"
-          />
-          <br />
           <label>Email</label>
           <input
             name="email"
@@ -48,11 +39,11 @@ class SignUp extends Component {
             type="text"
           />
           <br />
-          <button type="submit">Signup</button>
+          <button type="submit">Login</button>
         </form>
       </div>
     );
   }
 }
 
-export default connect(null, { signup })(SignUp);
+export default connect(null, { login })(Login);

@@ -10,7 +10,7 @@ export class BootstrapCarousel extends Component {
         render() {
 
                 return (
-                  <Carousel interval={5000}>
+                  <Carousel interval={4000}>
                     <Carousel.Item>
                      <a href="https://www.samsung.com/uk/smartphones/galaxy-z-fold2/buy/">
                       <img

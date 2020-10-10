@@ -14,7 +14,7 @@ const PostShow = ({ match, posts, comments }) => {
       <div className='post-show' >
        <h1>{post.title}</h1>
        <p>{post.content}</p>
-       Comments
+       <h3>Comments</h3>
        <div className='comments'>
         <Comments postId={post.id} comments={comments} />
        </div>

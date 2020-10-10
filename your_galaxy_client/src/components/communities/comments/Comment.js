@@ -12,7 +12,9 @@ class Comment extends Component {
       <div className='commentCard'>
           <p>{comment.content}</p>
           <br></br>
-          <button onClick={() => this.props.deleteComment(comment)}> Delete </button>
+          <div className="dlte-comment-button">
+           <button onClick={() => this.props.deleteComment(comment)} className='deleteComment'> Delete </button>
+          </div>
       </div>
     );
   }

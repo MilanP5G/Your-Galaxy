@@ -1,3 +1,10 @@
+.commentCard {
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-top: 10px;
+
+}
+
 .post-show {
   background: white;
   border-radius: 20px;
@@ -13,5 +20,18 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0.025);
   text-align: center;
   transition: height 1000ms;
+}
 
+.deleteComment {
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  background-color: #b30000;
+  width:auto;
+}
+
+.dlte-comment-button {
+  display: grid;
+  height: 30px;
 }

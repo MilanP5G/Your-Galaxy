@@ -1,6 +1,6 @@
 .comment-form {
   margin-top: 500px;
-  margin-left: 550px;
+  margin-left: 400px;
   width: 100%;
   padding: 18px 5px 5px 5px;
 }
@@ -16,8 +16,25 @@
   border: none;
   outline: none;
   background: none;
-  width: 460px;
+  width: 700px;
   font-size: 18px;
   color: #555;
   padding: 15px 20px 15px 20px;
+}
+.submit-post {
+  color: white;
+  background-color: #12279e;
+  height: 52px;
+  margin-left: 20px;
+  width: 100px;
+  border-style: groove;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  box-shadow: 3px 3px 8px #b1b1b1,
+             -3px -3px 8px #ffffff;
+  transition: 0.3s;
 }

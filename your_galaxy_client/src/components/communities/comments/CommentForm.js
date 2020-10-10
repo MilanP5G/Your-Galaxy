@@ -33,7 +33,7 @@ const CommentForm = ({ postId, addComment }) => {
           onChange={(event) => setContent(event.target.value)}
           required
         />
-        <button type='submit'>Submit</button>
+        <button type='submit' className='submit-post'>Submit</button>
        </form>
       </div>
      </div>

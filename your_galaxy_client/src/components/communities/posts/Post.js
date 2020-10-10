@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { deletePost } from '../../../actions/PostAction'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import '../../../styling/Post.css'
 
 
 class Post extends Component {
@@ -17,7 +18,9 @@ class Post extends Component {
           <br></br>
           {post.content}
           <br></br>
-          <button onClick={() => this.props.deletePost(post)}> Delete </button>
+          <div className="dlte-post-button">
+            <button onClick={() => this.props.deletePost(post)} className='deletePost'> Delete </button>
+          </div>
       </div>
     );
   }

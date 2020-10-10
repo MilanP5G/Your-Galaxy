@@ -17,6 +17,19 @@ class UsersController < ApplicationController
     end
   end
 
+  # POST /users
+  # POST /users.json
+  def create
+    user = User.new(user_params)
+
+    if user.save
+      session[:id] = user.id
+      render json: { status: 201, user: user, logged_in: true}
+    else
+      render json: { status: 500, message: 'There was an error in creating an account'}
+    end
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
@@ -42,18 +55,6 @@ class UsersController < ApplicationController
   def edit
   end
 
-  # POST /users
-  # POST /users.json
-  def create
-    user = User.new(user_params)
-
-    if user.save
-      session[:id] = user.id
-      render json: { status: 201, user: user, logged_in: true}
-    else
-      render json: { status: 500, message: 'There was an error in creating an account'}
-    end
-  end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json

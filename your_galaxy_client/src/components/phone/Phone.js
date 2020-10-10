@@ -18,7 +18,6 @@ class Phone extends Component {
           <div className='phone-image' >
             <img
               src={phone.image_url}
-              onLoad={phone}
               alt=" "
             />
           </div>

@@ -13,6 +13,11 @@
   transition: height 1000ms;
   width: 500px;
 }
+
+.post-show p {
+  font-size: 1.5em;
+}
+
 .add-post {
     position: fixed;
     background: white;
@@ -20,8 +25,10 @@
     border: none;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     cursor: pointer;
-    height: 400px;
-    width: 200px;
+    float: right;
+    top: 90px;
+    height: 250px;
+    width: 450px;
     margin: 250px 30px;
     font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,8 +37,8 @@
 
 .deletePost {
   border: none;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   color: white;
   background-color: #b30000;
   margin-top: 100px;

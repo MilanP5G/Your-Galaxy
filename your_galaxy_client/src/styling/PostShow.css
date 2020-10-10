@@ -2,7 +2,26 @@
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   margin-top: 10px;
+}
 
+.commentCard p {
+  margin-bottom: 0;
+  height: auto;
+}
+
+.post-comments {
+  top: 100px;
+  width: 600px;
+  height: 500px;
+  overflow: scroll;
+  margin-left: 500px;
+}
+
+.post-show h1 {
+  background-color: black;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .post-show {
@@ -11,11 +30,8 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   top: 150px;
   width: 500px;
-  height: 100%;
+  height: auto;
   margin: 20px;
-  margin-left: 520px;
-  float: left;
-  padding: 0 20px;
   position: relative;
   -webkit-tap-highlight-color: rgba(0,0,0,0.025);
   text-align: center;

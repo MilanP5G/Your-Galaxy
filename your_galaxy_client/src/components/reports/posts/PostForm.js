@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { addPost } from '../../../actions/PostAction'
 import { connect } from 'react-redux'
+import '../../../styling/PostForm.css'
 
 
 const PostForm = props => {
@@ -16,7 +17,7 @@ const PostForm = props => {
       title: '',
       content: ''
     });
-    props.history.push(`/community`)
+    props.history.push(`/report`)
   }
 
   const handleChange = (event) => {
@@ -28,26 +29,30 @@ const PostForm = props => {
   const value = state.value
 
     return (
-      <div>
+      <div className="post-form-section">
        <form onSubmit={handleSubmit}>
-        <p>Post Title:</p>
+       <h1 className='report'>Report</h1>
         <input
           type='text'
           name='title'
-          placeholder='Post Title'
+          id='postForm-title'
+          placeholder='Add a title'
           onChange={handleChange}
           value={value}
         />
+        <br></br>
         <textarea
           type='text'
           name='content'
-          cols='30'
-          rows='5'
-          placeholder='Write your content here...'
+          id='postForm-content'
+          cols='50'
+          rows='10'
+          placeholder='Report here...'
           onChange={handleChange}
           value={value}
         />
-        <button type='submit'>Submit</button>
+        <br></br>
+        <button type='submit' className="submit-post">Submit</button>
        </form>
       </div>
     );

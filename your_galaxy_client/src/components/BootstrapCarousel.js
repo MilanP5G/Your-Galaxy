@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import zFold from '../assets/Samsung Galaxy Z Fold 2.png'
 import note20 from '../assets/Samsung Galaxy Note 20:Ultra.png'
 import s20FE from '../assets/Samsung Galaxy S20 FE.png'
+import welcomeGalaxy from '../assets/Welcome To Your Galaxy.png'
 import '../styling/Home.css'
 
 export class BootstrapCarousel extends Component {
@@ -10,6 +11,15 @@ export class BootstrapCarousel extends Component {
 
                 return (
                   <Carousel interval={5000}>
+                    <Carousel.Item>
+                     <a href="https://www.samsung.com/uk/smartphones/galaxy-z-fold2/buy/">
+                      <img
+                        id="Welcome-Galaxy"
+                        alt='Welcome to Your Galaxy'
+                        src={welcomeGalaxy}
+                      />
+                     </a>
+                    </Carousel.Item>
                     <Carousel.Item>
                     <a href="https://www.samsung.com/uk/smartphones/galaxy-z-fold2/buy/">
                       <img

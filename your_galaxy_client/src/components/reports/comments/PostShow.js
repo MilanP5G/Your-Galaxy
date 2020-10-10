@@ -11,6 +11,7 @@ const PostShow = ({ match, posts, comments }) => {
 
   return (
     <Fragment>
+     <div className="post-comments">
       <div className='post-show' >
        <h1>{post.title}</h1>
        <p>{post.content}</p>
@@ -18,12 +19,11 @@ const PostShow = ({ match, posts, comments }) => {
        <div className='comments'>
         <Comments postId={post.id} comments={comments} />
        </div>
+       </div>
       </div>
-      <br></br>
       <div className='show-comment-form' >
        <CommentForm postId={post.id} />
       </div>
-
     </Fragment>
   )
 

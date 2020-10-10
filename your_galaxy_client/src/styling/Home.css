@@ -1,30 +1,3 @@
-/*{box-sizing:border-box}
-
-/* Slideshow container */
-/* .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-} */
-
-/* Fading animation */
-/* .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-} */
-
 #Z-Fold-2 {
   margin-top: 140px;
   margin-left: 300px;
@@ -39,6 +12,12 @@
   height: auto;
 }
 #S20-FE {
+  margin-top: 90px;
+  margin-left: 240px;
+  width: 1090px;
+  height: auto;
+}
+#Welcome-Galaxy {
   margin-top: 90px;
   margin-left: 240px;
   width: 1090px;

@@ -1,6 +1,6 @@
 .comment-form {
-  margin-top: 500px;
-  margin-left: 400px;
+  margin-left: 420px;
+  margin-top: 100px;
   width: 100%;
   padding: 18px 5px 5px 5px;
 }
@@ -21,12 +21,13 @@
   color: #555;
   padding: 15px 20px 15px 20px;
 }
-.submit-post {
+
+.submit-comment {
   color: white;
   background-color: #12279e;
   height: 52px;
-  margin-left: 20px;
-  width: 100px;
+  margin-left: 200px;
+  width: 300px;
   border-style: groove;
   cursor: pointer;
   border-radius: 30px;

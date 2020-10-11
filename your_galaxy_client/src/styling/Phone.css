@@ -20,7 +20,7 @@ body {
   text-align: center;
   transition: 0.5s ease;
   cursor: pointer;
-  width: 260px;
+  width: 300px;
 }
 
 .phoneCard:hover {
@@ -29,9 +29,10 @@ body {
 }
 
 .phone-image img {
+  display: inline;
   padding-bottom: 10px;
-  max-width: 100%;
-  height: auto;
+  max-width: auto;
+  height: 300px;
 }
 
 .add-phone {

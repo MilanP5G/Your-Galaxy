@@ -24,7 +24,7 @@ const PhoneForm = (props) => {
       pros: '',
       cons: '',
     });
-    props.history.push(`/phones`);
+    window.location.reload(props.history.push(`/phones`));
   };
 
   const handleImageChange = (e) => {

@@ -12,7 +12,7 @@
 .post-comments {
   top: 100px;
   width: 600px;
-  height: 500px;
+  height: 600px;
   overflow: scroll;
   margin-left: 500px;
 }

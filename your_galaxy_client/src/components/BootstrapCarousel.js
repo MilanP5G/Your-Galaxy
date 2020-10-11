@@ -12,13 +12,11 @@ export class BootstrapCarousel extends Component {
                 return (
                   <Carousel interval={4000}>
                     <Carousel.Item>
-                     <a href="https://www.samsung.com/uk/smartphones/galaxy-z-fold2/buy/">
                       <img
                         id="Welcome-Galaxy"
                         alt='Welcome to Your Galaxy'
                         src={welcomeGalaxy}
                       />
-                     </a>
                     </Carousel.Item>
                     <Carousel.Item>
                     <a href="https://www.samsung.com/uk/smartphones/galaxy-z-fold2/buy/">

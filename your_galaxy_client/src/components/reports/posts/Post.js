@@ -19,7 +19,7 @@ class Post extends Component {
           {post.content}
           <br></br>
           <div className="dlte-post-button">
-            <button onClick={() => this.props.deletePost(post)} className='deletePost'> Delete </button>
+            <button onClick={() => this.props.deletePost(post)} className='deletePost'> Resolved </button>
           </div>
       </div>
     );

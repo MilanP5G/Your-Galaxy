@@ -9,7 +9,7 @@ In order to report a defect with your device's', click on 'Report' in the navbar
 To delete a device and a report, simply click 'delete' on the bottom of a device card and 'resolved' on the bottom of a report box.
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/MilanP5G/YourGalaxy. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/MilanP5G/Your-Galaxy. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
 ## License
 The application is available as open source under the terms of the MIT License.

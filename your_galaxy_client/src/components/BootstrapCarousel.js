@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import zFold from '../assets/Samsung Galaxy Z Fold 2.png'
 import note20 from '../assets/Samsung Galaxy Note 20:Ultra.png'
@@ -6,8 +6,7 @@ import s20FE from '../assets/Samsung Galaxy S20 FE.png'
 import welcomeGalaxy from '../assets/Welcome To Your Galaxy.png'
 import '../styling/Home.css'
 
-export class BootstrapCarousel extends Component {
-        render() {
+const BootstrapCarousel = () => {
 
                 return (
                   <Carousel interval={4000}>
@@ -46,7 +45,6 @@ export class BootstrapCarousel extends Component {
                     </Carousel.Item>
                   </Carousel>
                 )
-        }
 }
 
 

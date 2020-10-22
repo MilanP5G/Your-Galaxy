@@ -8,8 +8,22 @@ const Phones = props => {
     search: ''
   })
 
+  const updatedSearch = (event) => {
+    setState({
+      search: event.target.value
+    })
+  }
+
+
     return(
       <div>
+       <div>
+       <input
+         type='text'
+         className='phones-search'
+         value={state}
+         onChange={updatedSearch}
+        />
         {props.phones.phones.map(phone => (
           <Phone phone={phone} key={phone.id} />
         ))}
@@ -17,6 +31,7 @@ const Phones = props => {
             <button className='add-phone'>+</button>
         </Link>
       </div>
+     </div>
     );
 };
 

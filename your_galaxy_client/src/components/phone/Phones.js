@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Phone from './Phone'
 import { Link } from 'react-router-dom'
 import '../../styling/Phones.css'
 
 const Phones = props => {
+  const [state, setState] = useState({
+    search: ''
+  })
 
     return(
       <div>

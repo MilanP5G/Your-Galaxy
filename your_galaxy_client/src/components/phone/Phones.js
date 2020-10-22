@@ -16,7 +16,7 @@ const Phones = props => {
 
   const filteredPhones = props.phones.phones.filter(
     (phone) => {
-      return phone.title.indexOf(state.search) !== -1;
+      return phone.title.toLowerCase().indexOf(state.search.toLowerCase()) !== -1;
     }
   )
 

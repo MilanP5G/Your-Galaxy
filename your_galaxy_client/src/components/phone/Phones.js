@@ -8,7 +8,7 @@ const Phones = props => {
     search: ''
   })
 
-  const updatedSearch = (event) => {
+  const updatedSearch = event => {
     setState({
       search: event.target.value
     })
@@ -16,21 +16,21 @@ const Phones = props => {
 
   const filteredPhones = props.phones.phones.filter(
     (phone) => {
-      return phone.title.indexOf(state.search) !== 1
+      return phone.title.indexOf(state.search) !== -1;
     }
   )
 
 
     return(
       <div>
-      <input
-        type='text'
-        className='phone-search'
-        value={state.search}
-        onChange={updatedSearch}
-       />
+        <input
+          type='text'
+          className='phone-search'
+          value={state.search}
+          onChange={updatedSearch}
+         />
        <div>
-        {props.phones.phones.map(phone => (
+        {filteredPhones.map(phone => (
           <Phone phone={phone} key={phone.id} />
         ))}
         <Link to='/phones/add' >

@@ -14,16 +14,22 @@ const Phones = props => {
     })
   }
 
+  const filteredPhones = props.phones.phones.filter(
+    (phone) => {
+      return phone.title.indexOf(state.search) !== 1
+    }
+  )
+
 
     return(
       <div>
+      <input
+        type='text'
+        className='phone-search'
+        value={state.search}
+        onChange={updatedSearch}
+       />
        <div>
-       <input
-         type='text'
-         className='phones-search'
-         value={state}
-         onChange={updatedSearch}
-        />
         {props.phones.phones.map(phone => (
           <Phone phone={phone} key={phone.id} />
         ))}

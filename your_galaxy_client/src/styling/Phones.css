@@ -7,8 +7,12 @@
   cursor: pointer;
   height: 400px;
   width: 200px;
-  margin: 250px 30px;
+  margin: 100px 30px;
   font-size: 100px;
   font-family: Arial, Helvetica, sans-serif;
   opacity: 50%;
+}
+
+.phone-search {
+  margin-top: 200px;
 }

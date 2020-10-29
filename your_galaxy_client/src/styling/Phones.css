@@ -8,6 +8,7 @@
   height: 400px;
   width: 200px;
   margin: 100px 30px;
+  padding-bottom: 30px;
   font-size: 100px;
   font-family: Arial, Helvetica, sans-serif;
   opacity: 50%;
@@ -17,7 +18,9 @@
   margin-top: 180px;
   margin-left: 50px;
   height: 40px;
+  font-size: 2em;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: blue
+  border-color: #12279e;
+  padding-bottom: 15px;
 }

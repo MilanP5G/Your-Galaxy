@@ -14,5 +14,10 @@
 }
 
 .phone-search {
-  margin-top: 200px;
+  margin-top: 180px;
+  margin-left: 50px;
+  height: 40px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue
 }

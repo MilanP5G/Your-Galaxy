@@ -23,12 +23,16 @@ const Phones = props => {
 
     return(
       <div>
+       <div>
         <input
           type='text'
           className='phone-search'
+          placeholder="Search Devices"
           value={state.search}
           onChange={updatedSearch}
          />
+         <i class="fas fa-search"></i>
+        </div>
        <div>
         {filteredPhones.map(phone => (
           <Phone phone={phone} key={phone.id} />
